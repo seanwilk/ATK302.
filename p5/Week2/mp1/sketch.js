@@ -6,49 +6,55 @@ function setup() {
 
 function draw() {
   // put drawing code here
-  background('#ABD9FF') ;
+
   //stuff we always want to show
 
   if (mouseIsPressed) {
-    //stuff that shows when mouse is pressed
-    fill(250, 0, 0)
-    ellipse(500, 350, 400, 400);
+    background('#ABD9FF')
 
-    fill(250, 0, 0)
-    triangle(674, 254, 762, 235, 687, 284)
+    fill(255, 0, 0)
+    rect(200, 350, 100, 100);
+}
 
-
-   } else {
+else {
      //stuff that happens when mouse isnt pressed
      noStroke()
 
-     fill(250)
-     ellipse(150, 100, 75, 75)
+     fill(0, 0, 0)
+     rect(299, 600, 400, 300)
+
+     background('#ABD9FF')
 
      fill(250)
-     ellipse(200, 100, 75, 75)
+     rect(250, 700, 100, 300);
 
      fill(250)
-     ellipse(175, 135, 75, 75)
+     ellipse(150, 100, 75, 75);
 
      fill(250)
-     ellipse(225, 135, 75, 75)
+     ellipse(200, 100, 75, 75);
+
+     fill(250)
+     ellipse(175, 135, 75, 75);
+
+     fill(250)
+     ellipse(225, 135, 75, 75);
 
 
      fill(250)
-     ellipse(400, 100, 85, 85)
+     ellipse(400, 100, 85, 85);
 
      fill(250)
-     ellipse(450, 100, 75, 75)
+     ellipse(450, 100, 75, 75);
 
      fill(250)
-     ellipse(425, 135, 95, 95)
+     ellipse(425, 135, 95, 95);
 
      fill(250)
-     ellipse(475, 135, 75, 75)
+     ellipse(475, 135, 75, 75);
 
      fill(250)
-     ellipse(475, 135, 75, 75)
+     ellipse(475, 135, 75, 75);
 
 
      fill(0)
@@ -127,12 +133,12 @@ function draw() {
      triangle(25, 499, 55, 452, 82, 499);
 
      fill(250, 250, 0)
-     ellipse(850, 100, 75, 75)
+     ellipse(850, 100, 75, 75);
    }
 
    fill(25) ;
    textSize(20) ;
-      text(mouseX.toFixed(1) + "," + mouseY, 40,40 )
+      text(mouseX.toFixed(0) + "," + mouseY, 40,40 )
 
 }
 
