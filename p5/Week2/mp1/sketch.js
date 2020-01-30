@@ -412,9 +412,7 @@ else {
      ellipse(850, 100, 75, 75);
    }
 
-   fill(25) ;
-   textSize(20) ;
-      text(mouseX.toFixed(0) + "," + mouseY, 40,40 )
+  
 
 }
 
