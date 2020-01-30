@@ -412,12 +412,9 @@ else {
      ellipse(850, 100, 75, 75);
    }
 
-  
+
 
 }
 
 
 //do not put inside draw
-function mouseReleased() {
-  console.log(mouseX + ", " + mouseY) ;
-}
