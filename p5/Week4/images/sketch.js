@@ -25,7 +25,7 @@ function draw() {
   image(bunnyPic2, 250, 0,);
   image(bunnyPic3, 600, 0,);
   textFont(myfont, 45) ;
-  text("bunnies wearing objects", 400, 400) ;
+  text("bunnies wearing objects", 400, 500) ;
 
 }
 
