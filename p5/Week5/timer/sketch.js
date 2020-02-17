@@ -3,7 +3,7 @@ var timer = 200;
 function setup() {
   // put setup code here
   createCanvas(800, 800);
-  background('green');
+  background('red');
 }
 
 function draw() {
