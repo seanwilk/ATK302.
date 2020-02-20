@@ -38,7 +38,7 @@ function draw() {
   vol = mic.getLevel(); // level is between 0 and 1
   vol = vol * 100; // you may need to change this
 
-  if (vol > 3) {
+  if (vol > 0.4) {
     // do something
     y++ ;
 
