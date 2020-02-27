@@ -16,8 +16,8 @@ function draw() {
   fill("yellow");
   rect(width / 2, height / 2, 150, 400);
 
-  
   rect(40, 100, 700, 20);
+  rect(400, 145, 20, 110);
 
 
 
