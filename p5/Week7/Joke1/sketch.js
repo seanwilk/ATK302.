@@ -1,8 +1,11 @@
 var myState = 0 ;
+var windpic ;
+
 
 function setup() {
   // put setup code here
   createCanvas(800, 800) ;
+  windpic = loadImage("assets/wind.jpg");
 }
 
 function draw() {
@@ -10,13 +13,16 @@ function draw() {
 
 switch(myState){
   case 0:
-  background("red") ;
-  text("hello world", 100, 100) ;
+  background("grey") ;
+  textSize(40, 40);
+  text("Renewable energy?", 100, 100) ;
   break ;
 
   case 1:
-  background("green") ;
-  text("hola world", 100, 100);
+  background("100") ;
+  text("I'm a big fan", 100, 100);
+  image(windpic, 50, 300, 400, 300);
+  textSize(40, 40);
   break;
 
 
