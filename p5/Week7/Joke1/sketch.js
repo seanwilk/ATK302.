@@ -33,7 +33,7 @@ switch(myState){
 
 function mouseReleased() {
   myState = myState + 1 ;
-  if (myState > 4) {
+  if (myState > 1) {
     myState = 0 ;
   }
 
