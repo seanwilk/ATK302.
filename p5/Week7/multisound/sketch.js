@@ -17,7 +17,7 @@ function setup() {
   song2.stop();
   song3.loop();
   song3.stop();
-  
+
 
 }
 
@@ -30,7 +30,7 @@ function draw() {
       myState = 1
       break;
     case 1:
-      text("Thriller", 100, 100);
+      text("Thriller", 200, 100);
 
       break;
     case 2:
