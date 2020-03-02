@@ -25,7 +25,7 @@ function draw() {
 
   switch (myState) {
     case 0:
-      text("hi", 100, 100);
+      text("sean", 100, 100);
       song1.play();
       myState = 1
       break;
@@ -34,7 +34,7 @@ function draw() {
 
       break;
     case 2:
-      text("hi", 100, 100);
+      text("sean", 100, 100);
       song2.play();
       myState = 3
       break;
@@ -42,7 +42,7 @@ function draw() {
       text("donkey", 100, 100);
       break;
     case 4:
-      text("hi", 100, 100);
+      text("sean", 100, 100);
       song3.play();
       myState = 5
       break;
