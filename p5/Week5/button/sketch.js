@@ -7,6 +7,7 @@ function setup() {
 function draw() {
   // put drawing code here
   rect(100, 100, 100, 100) ;
+  text("Hey", 150, 150);
 }
 
 function mouseReleased() {
