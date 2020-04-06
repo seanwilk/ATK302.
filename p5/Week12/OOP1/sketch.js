@@ -30,6 +30,7 @@ function draw() {
     background("pink");
     textSize(24) ;
     text("Welcome!", width/2, height/2) ;
+    text("Click Screen to Begin!", 400, 500) ;
 
     break ;
 
@@ -48,13 +49,15 @@ function draw() {
     background("Green") ;
     fill("white");
     textSize(24);
-    text("You won! Play again", width/2, height/2);
+    text("You won! Click mouse to play again", width/2, height/2);
     break;
 
     case 3: //lose
     background("red");
+    fill("white");
     textSize(24) ;
     text("You Lost! Sorry", width/2, height/2);
+    text("Click mouse to play again!", 400, 500);
     break;
   }
 
