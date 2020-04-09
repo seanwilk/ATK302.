@@ -1,18 +1,28 @@
 var cars = [];
 var frogPos;
-var myState = 0;
+var myState = -1;
 var maxCars = 10;
-var maxTimer = 12 + 850;
+var maxTimer = 15 * 60;
 var timer = maxTimer;
 var covid;
 var mask;
 var scary;
 var adventure;
 var bit;
+var win;
+var menu;
+var lose;
+var sad;
+var sad1;
+var coin;
 var y = 0;
 
 function preload() {
   bit = loadSound("assets/8bit.mp3");
+  win = loadSound("assets/win.wav");
+  menu = loadSound("assets/menu.mp3");
+  lose = loadSound("assets/lose.wav");
+  coin = loadSound("assets/coin.wav");
 }
 
 
@@ -20,11 +30,14 @@ function setup() {
   // put setup code here
   createCanvas(1200, 800);
 
-  bit.play();
+
   covid = loadImage("assets/covid.png");
   mask = loadImage("assets/mask.png");
   scary = loadFont("assets/scary.TTF");
   adventure = loadFont("assets/Adventure.otf");
+  sad = loadImage("assets/saddoc.jpg");
+  sad1 = loadImage("assets/saddoc1.jpg");
+
 
 
   //spawn cars
@@ -43,12 +56,18 @@ function draw() {
 
   switch (myState) {
 
+    case -1:
+      menu.loop();
+      win.stop();
+      myState = 0;
+      break;
+
     case 0: //menu
 
       background("red");
-      image(covid, 40, y, 100, 100);
-      image(covid, 1000, y, 100, 100);
 
+      image(covid, 40, y, 100, 100);
+      image(covid, 1000, -y + 700, 100, 100);
       textFont(scary);
       textSize(40);
       text("COVID-19", 600, 150)
@@ -74,6 +93,9 @@ function draw() {
       if (timer <= 0) {
         timer = maxTimer;
         myState = 3;
+        bit.stop();
+        lose.play();
+
       }
 
       break;
@@ -93,17 +115,17 @@ function draw() {
 
     case 3: //lose
       background("red");
+      image(sad, 350, 50, 512, 283);
       fill("white");
       textSize(40);
       text("You lost, and COVID-19 has wiped out humanity!", width / 2, height / 2);
-
       fill("black");
       text("Way to GO, loser!", 600, 450);
       text("Click mouse for a shot at redemption!", 600, 700);
+
+
       break;
   }
-
-
 
 
 
@@ -112,6 +134,8 @@ function draw() {
 function mouseReleased() {
   switch (myState) {
     case 0:
+      menu.stop();
+      bit.loop();
       myState = 1;
       break;
 
@@ -121,6 +145,8 @@ function mouseReleased() {
       for (var i = 0; i < maxCars; i++) {
         cars.push(new Car());
       }
+      menu.loop();
+      win.stop();
       myState = 0;
       break;
 
@@ -134,6 +160,8 @@ function mouseReleased() {
       }
 
       myState = 0;
+      menu.loop();
+      lose.stop();
       break;
 
   }
@@ -148,13 +176,19 @@ function game() {
     cars[i].drive();
     if (cars[i].pos.dist(frogPos) < 50) {
       cars.splice(i, 1);
+      coin.play();
 
     }
+
   }
 
   if (cars.length == 0) {
+    bit.stop();
+    win.play();
     myState = 2;
   }
+
+
 
   //frog
   fill('green');
@@ -197,4 +231,9 @@ function Car() {
   }
 
 
+}
+
+
+function touchStarted() {
+  getAudioContext().resume();
 }
