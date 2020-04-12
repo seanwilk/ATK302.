@@ -58,7 +58,7 @@ function draw() {
 
     case -1:
       menu.loop();
-      win.stop();
+
       myState = 0;
       break;
 
