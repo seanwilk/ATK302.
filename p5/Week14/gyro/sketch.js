@@ -8,6 +8,10 @@ var yPosition = 0;
 var x = 0; // acceleration data
 var y = 0;
 var z = 0;
+var whoosh;
+
+function preload() {
+  whoosh = loadSound("assets/whoosh.mp3");
 
 function setup() {
 
@@ -78,6 +82,7 @@ window.addEventListener('deviceorientation', function(e) {
   alpha = e.alpha;
   beta = e.beta;
   gamma = e.gamma;
+  whoosh.play();
 });
 
 
