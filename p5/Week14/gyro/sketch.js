@@ -73,6 +73,8 @@ function draw() {
   textAlign(CENTER);
   text("atk", width / 2, height / 2);
 
+whoosh.play();
+
 }
 
 // HERE'S THE STUFF YOU NEED FOR READING IN DATA!!!
@@ -82,7 +84,7 @@ window.addEventListener('deviceorientation', function(e) {
   alpha = e.alpha;
   beta = e.beta;
   gamma = e.gamma;
-  whoosh.play();
+
 });
 
 
