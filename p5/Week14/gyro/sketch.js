@@ -11,7 +11,7 @@ var z = 0;
 
 function setup() {
 
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, windowHeight) ; 
 
   // initialize accelerometer variables
   alpha = 0;
