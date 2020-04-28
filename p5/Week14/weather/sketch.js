@@ -49,10 +49,11 @@ function draw() {
 
       fill("white");
       noStroke();
-      ellipse(x, 250, 100, 100);
-      ellipse(x - 50, 200, 100, 100);
-      ellipse(x + 20, 200, 100, 100);
-      ellipse(x - 50, 250, 75, 75);
+      ellipse(x, 250, 75, 75);
+      ellipse(x - 50, 200, 75, 75);
+      ellipse(x + 20, 200, 75, 75);
+      ellipse(x - 50, 250, 50, 50);
+      ellipse(x + 50, 250, 50, 50);
       x = x + ws / 4;
       if (x > width) x = -100;
 
@@ -60,6 +61,7 @@ function draw() {
       var tmp = 0
       tmp = map(temperature, -10, 100, 2, height - 10);
       rect(width - 40, height - 10, 30, -tmp);
+      ellipse(375, 380, 50, 50);
 
       break;
 
