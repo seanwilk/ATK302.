@@ -73,7 +73,6 @@ function draw() {
   textAlign(CENTER);
   text("atk", width / 2, height / 2);
 
-whoosh.play();
 
 }
 
