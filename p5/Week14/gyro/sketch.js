@@ -40,7 +40,7 @@ function draw() {
 
   rotate(radians(alpha)); // using alpha in here so it doesn't feel bad
 
-  image(bunnyImage, 0, 0, 500, 500);
+  image(saber, 0, 0, 500, 500);
   //  	rect(0, 0, 100, 100) ;
   pop();
 
