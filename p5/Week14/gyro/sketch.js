@@ -69,7 +69,8 @@ function draw() {
   noStroke();
   textSize(100);
   textAlign(CENTER);
-  text("May the force be with you!", width / 4, height / 4);
+  text("May the force", width / 4, height / 4);
+  text("be with you!", width / 4, height / 4);
 
 
 }
