@@ -44,13 +44,13 @@ function draw() {
   noStroke();
   textSize(50);
   textAlign(CENTER);
-  text("May the force...", 50, 100);
+  text("May the force...", 25, 25);
 
   fill('white');
   noStroke();
   textSize(50);
   textAlign(CENTER);
-  text("be with you...", 50, 150);
+  text("be with you...", 25, 50);
 
   image(saber, 0, 0, 500, 500);
   //  	rect(0, 0, 100, 100) ;
