@@ -8,10 +8,8 @@ var yPosition = 0;
 var x = 0; // acceleration data
 var y = 0;
 var z = 0;
-var whoosh;
 
-function preload() {
-  whoosh = loadSound("assets/whoosh.mp3");
+
 
 function setup() {
 
@@ -54,24 +52,24 @@ function draw() {
   textAlign(LEFT);
   textSize(20);
   fill('black');
-  text("orientation data:", 25, 25);
+//  text("orientation data:", 25, 25);
   textSize(15);
-  text("alpha: " + alpha, 25, 50);
-  text("beta: " + beta, 25, 70);
-  text("gamma: " + gamma, 25, 90);
+//  text("alpha: " + alpha, 25, 50);
+//  text("beta: " + beta, 25, 70);
+//  text("gamma: " + gamma, 25, 90);
   textSize(20);
-  text("acceleration data:", 25, 125);
+//  text("acceleration data:", 25, 125);
   textSize(15);
-  text("x = " + x.toFixed(2), 25, 150); // .toFixed means just show (x) decimal places
-  text("y = " + y.toFixed(2), 25, 170);
-  text("z = " + z.toFixed(4), 25, 190);
+//  text("x = " + x.toFixed(2), 25, 150); // .toFixed means just show (x) decimal places
+//  text("y = " + y.toFixed(2), 25, 170);
+//  text("z = " + z.toFixed(4), 25, 190);
 
   // MORE DECORATIONS - write that pretty ATK type on top.
   fill('white');
   noStroke();
-  textSize(300);
+  textSize(250);
   textAlign(CENTER);
-  text("atk", width / 2, height / 2);
+  text("May the force be with you!", width / 2, height / 2);
 
 
 }
