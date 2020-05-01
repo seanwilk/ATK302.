@@ -40,7 +40,7 @@ function draw() {
 
   rotate(radians(alpha)); // using alpha in here so it doesn't feel bad
 
-  image(saber, 500, 500);
+  image(saber,25, 25, 500, 500);
   //  	rect(0, 0, 100, 100) ;
   pop();
 
