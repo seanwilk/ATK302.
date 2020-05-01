@@ -67,7 +67,7 @@ function draw() {
 
   // MORE DECORATIONS - write that pretty ATK type on top.
 
-  fill(random(255), random(255), random(255));
+  fill("#F2CF1D");
   noStroke();
   textSize(50);
   textAlign(CENTER);
