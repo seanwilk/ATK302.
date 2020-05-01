@@ -65,7 +65,7 @@ function draw() {
   // MORE DECORATIONS - write that pretty ATK type on top.
   fill('white');
   noStroke();
-  textSize(300);
+  textSize(150);
   textAlign(CENTER);
   text("May the force...", width / 2, height / 2);
 
