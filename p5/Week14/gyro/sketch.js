@@ -44,16 +44,16 @@ function draw() {
   noStroke();
   textSize(50);
   textAlign(CENTER);
-  text("May the force...", width/2, height/2);
-
-  image(saber, 0, 0, 500, 500);
-  //  	rect(0, 0, 100, 100) ;
+  text("May the force...", width/4, height/4);
 
   fill('white');
   noStroke();
   textSize(50);
   textAlign(CENTER);
-  text("be with you...", width/4, height/4);
+  text("be with you...", width/2, height/2);
+
+  image(saber, 0, 0, 500, 500);
+  //  	rect(0, 0, 100, 100) ;
 
   pop();
 
