@@ -40,17 +40,7 @@ function draw() {
 
   rotate(radians(alpha)); // using alpha in here so it doesn't feel bad
 
-  fill('white');
-  noStroke();
-  textSize(50);
-  textAlign(CENTER);
-  text("May the force...", 25, 25);
 
-  fill('white');
-  noStroke();
-  textSize(50);
-  textAlign(CENTER);
-  text("be with you...", 25, 50);
 
   image(saber, 0, 0, 500, 500);
   //  	rect(0, 0, 100, 100) ;
@@ -63,21 +53,31 @@ function draw() {
   textAlign(LEFT);
   textSize(20);
   fill('black');
-  text("orientation data:", 25, 25);
+  //text("orientation data:", 25, 25);
   textSize(15);
-  text("alpha: " + alpha, 25, 50);
-  text("beta: " + beta, 25, 70);
-  text("gamma: " + gamma, 25, 90);
+//  text("alpha: " + alpha, 25, 50);
+//  text("beta: " + beta, 25, 70);
+//  text("gamma: " + gamma, 25, 90);
   textSize(20);
-  text("acceleration data:", 25, 125);
+//  text("acceleration data:", 25, 125);
   textSize(15);
-  text("x = " + x.toFixed(2), 25, 150); // .toFixed means just show (x) decimal places
-  text("y = " + y.toFixed(2), 25, 170);
-  text("z = " + z.toFixed(4), 25, 190);
+//  text("x = " + x.toFixed(2), 25, 150); // .toFixed means just show (x) decimal places
+  //text("y = " + y.toFixed(2), 25, 170);
+  //text("z = " + z.toFixed(4), 25, 190);
 
   // MORE DECORATIONS - write that pretty ATK type on top.
 
+  fill('white');
+  noStroke();
+  textSize(50);
+  textAlign(CENTER);
+  text("May the force...", 25, 25);
 
+  fill('white');
+  noStroke();
+  textSize(50);
+  textAlign(CENTER);
+  text("be with you...", 25, 50);
 }
 
 // HERE'S THE STUFF YOU NEED FOR READING IN DATA!!!
