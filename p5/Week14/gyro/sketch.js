@@ -53,7 +53,7 @@ function draw() {
   noStroke();
   textSize(50);
   textAlign(CENTER);
-  text("be with you...", width/2, height/2);
+  text("be with you...", width/4, height/4);
 
   pop();
 
