@@ -71,13 +71,8 @@ function draw() {
   noStroke();
   textSize(50);
   textAlign(CENTER);
-  text("May the force...", 25, 25);
+  text("May the force...", width, height);
 
-  fill('white');
-  noStroke();
-  textSize(50);
-  textAlign(CENTER);
-  text("be with you...", 25, 50);
 }
 
 // HERE'S THE STUFF YOU NEED FOR READING IN DATA!!!
