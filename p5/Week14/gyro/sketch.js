@@ -42,6 +42,13 @@ function draw() {
 
   image(saber, 0, 0, 500, 500);
   //  	rect(0, 0, 100, 100) ;
+
+  fill('white');
+  noStroke();
+  textSize(150);
+  textAlign(CENTER);
+  text("May the force...", width / 2, height / 2);
+
   pop();
 
 
@@ -63,11 +70,7 @@ function draw() {
   text("z = " + z.toFixed(4), 25, 190);
 
   // MORE DECORATIONS - write that pretty ATK type on top.
-  fill('white');
-  noStroke();
-  textSize(150);
-  textAlign(CENTER);
-  text("May the force...", width / 2, height / 2);
+
 
 }
 
