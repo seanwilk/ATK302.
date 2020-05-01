@@ -67,7 +67,7 @@ function draw() {
   noStroke();
   textSize(300);
   textAlign(CENTER);
-  text("atk", width / 2, height / 2);
+  text("May the force...", width / 2, height / 2);
 
 }
 
