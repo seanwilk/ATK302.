@@ -8,6 +8,7 @@ var yPosition = 0;
 var x = 0; // acceleration data
 var y = 0;
 var z = 0;
+var stars;
 
 function setup() {
 
@@ -19,6 +20,7 @@ function setup() {
   gamma = 0;
 
   saber = loadImage("assets/saber.png");
+  stars =loadImage("assets/stars.jpg");
   imageMode(CENTER);
   rectMode(CENTER);
 
@@ -26,7 +28,7 @@ function setup() {
 
 function draw() {
 
-  background('black'); // light blue
+  image(stars); // light blue
 
   // the map command !!!!
   // takes your variable and maps it from range 1 to range 2
