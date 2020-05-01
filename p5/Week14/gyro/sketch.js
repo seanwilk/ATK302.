@@ -9,18 +9,16 @@ var x = 0; // acceleration data
 var y = 0;
 var z = 0;
 
-
-
 function setup() {
 
-  createCanvas(windowWidth, windowHeight) ;
+  createCanvas(windowWidth, windowHeight);
 
   // initialize accelerometer variables
   alpha = 0;
   beta = 0;
   gamma = 0;
 
-  saber = loadImage("assets/saber.png");
+  bunnyImage = loadImage("assets/saber.png");
   imageMode(CENTER);
   rectMode(CENTER);
 
@@ -28,7 +26,7 @@ function setup() {
 
 function draw() {
 
-  background('black'); // light blue
+  background('#c6f5ff'); // light blue
 
   // the map command !!!!
   // takes your variable and maps it from range 1 to range 2
@@ -42,7 +40,7 @@ function draw() {
 
   rotate(radians(alpha)); // using alpha in here so it doesn't feel bad
 
-  image(saber, 10, 1000, 500, 500);
+  image(saber, 0, 0, 500, 500);
   //  	rect(0, 0, 100, 100) ;
   pop();
 
@@ -52,26 +50,24 @@ function draw() {
   textAlign(LEFT);
   textSize(20);
   fill('black');
-//  text("orientation data:", 25, 25);
+  text("orientation data:", 25, 25);
   textSize(15);
-//  text("alpha: " + alpha, 25, 50);
-//  text("beta: " + beta, 25, 70);
-//  text("gamma: " + gamma, 25, 90);
+  text("alpha: " + alpha, 25, 50);
+  text("beta: " + beta, 25, 70);
+  text("gamma: " + gamma, 25, 90);
   textSize(20);
-//  text("acceleration data:", 25, 125);
+  text("acceleration data:", 25, 125);
   textSize(15);
-//  text("x = " + x.toFixed(2), 25, 150); // .toFixed means just show (x) decimal places
-//  text("y = " + y.toFixed(2), 25, 170);
-//  text("z = " + z.toFixed(4), 25, 190);
+  text("x = " + x.toFixed(2), 25, 150); // .toFixed means just show (x) decimal places
+  text("y = " + y.toFixed(2), 25, 170);
+  text("z = " + z.toFixed(4), 25, 190);
 
   // MORE DECORATIONS - write that pretty ATK type on top.
   fill('white');
   noStroke();
-  textSize(100);
+  textSize(300);
   textAlign(CENTER);
-  text("May the force", width / 4, height / 4); 
-  text("be with you!", width / 4, height / 4);
-
+  text("May the force...", width / 2, height / 2);
 
 }
 
@@ -82,7 +78,6 @@ window.addEventListener('deviceorientation', function(e) {
   alpha = e.alpha;
   beta = e.beta;
   gamma = e.gamma;
-
 });
 
 
