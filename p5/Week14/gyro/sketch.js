@@ -44,7 +44,7 @@ function draw() {
   noStroke();
   textSize(50);
   textAlign(CENTER);
-  text("May the force...", width / 2, height / 2);
+  text("May the force...", width, height);
 
   image(saber, 0, 0, 500, 500);
   //  	rect(0, 0, 100, 100) ;
@@ -53,7 +53,7 @@ function draw() {
   noStroke();
   textSize(50);
   textAlign(CENTER);
-  text("be with you...", width, height);
+  text("be with you...", width/2, height/2);
 
   pop();
 
