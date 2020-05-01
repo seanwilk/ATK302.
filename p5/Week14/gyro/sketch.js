@@ -18,7 +18,7 @@ function setup() {
   beta = 0;
   gamma = 0;
 
-  bunnyImage = loadImage("assets/saber.png");
+  saber = loadImage("assets/saber.png");
   imageMode(CENTER);
   rectMode(CENTER);
 
@@ -40,7 +40,7 @@ function draw() {
 
   rotate(radians(alpha)); // using alpha in here so it doesn't feel bad
 
-  image(saber,25, 25, 500, 500);
+  image(saber, 0, 0, 500, 500);
   //  	rect(0, 0, 100, 100) ;
   pop();
 
@@ -67,7 +67,7 @@ function draw() {
   noStroke();
   textSize(300);
   textAlign(CENTER);
-  text("May the force...", width / 2, height / 2);
+  text("atk", width / 2, height / 2);
 
 }
 
