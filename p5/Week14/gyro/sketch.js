@@ -42,7 +42,7 @@ function draw() {
 
   fill('white');
   noStroke();
-  textSize(150);
+  textSize(50);
   textAlign(CENTER);
   text("May the force...", width / 4, height / 4);
 
@@ -51,9 +51,9 @@ function draw() {
 
   fill('white');
   noStroke();
-  textSize(150);
+  textSize(50);
   textAlign(CENTER);
-  text("be with you...", width / 4, height / 4);
+  text("be with you...", width / 6, height / 6);
 
   pop();
 
