@@ -28,7 +28,7 @@ function setup() {
 
 function draw() {
 
-  image(stars, 1000, 1000); // light blue
+  image(stars, width, height); // light blue
 
   // the map command !!!!
   // takes your variable and maps it from range 1 to range 2
